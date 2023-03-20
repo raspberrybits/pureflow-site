@@ -52,6 +52,7 @@ function events() {
   });
 }
 
+
 events();
 
 
@@ -67,4 +68,8 @@ function FullView(ImgLink){
 function CloseFullView() {
   document.getElementById("FullImageView").style.display = "none"
 }
+
+
+
+// cary dark mode to sites
 
