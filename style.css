@@ -283,8 +283,8 @@ header .container {
 }
 
 .norm-img {
-  width: 123%;
-  transform: translate(15%, 25px);
+  width: 110%;
+  transform: translate(0%, 25px);
   border-radius: 25px;
 }
 
@@ -863,3 +863,46 @@ details > summary::-webkit-details-marker {
 }
 
 
+
+
+
+/* sitemap page */
+
+.sitemap-container {
+  position: center;
+  max-width: 90rem;
+  width: 100%;
+  margin: auto;
+  padding: 100px 300px;
+  z-index: 10;
+  transform: translate(-18.5%, 25px);
+  
+}
+
+.sitemap-showcase-area .sitemap-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  box-shadow: 0 0 2.4em rgba(0, 0, 0, 0.1);
+}
+
+.sitemap-showcase-area {
+  padding: 200px 300px;
+  margin: 0 auto;
+}
+
+.sitemap-showcase-area .sitemap-container {
+  justify-content: center;
+}
+
+
+
+
+/* technology videos */
+
+.tech-vid {
+  width: 80%;
+  transform: translate(14%, 25px);
+  border-radius: 25px;
+}
