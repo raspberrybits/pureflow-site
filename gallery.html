@@ -43,56 +43,6 @@
         </header>
 
 
-        <!-- PRODUCTS IN CART
-        <div class="product-row">
-            <div class="product-card">
-                <h1>Best Shoes</h1>
-                <p>Lorem ipsum, or lipsum as it is sometimes known</p>
-                <div class="product-pic"></div>
-                <div class="product-colors">
-                <span class="blue active" data-color="#7ed6df" data-pic="url(1.png)"></span>
-                <span class="green" data-color="#badc58" data-pic="url(2.png)"></span>
-                <span class="yellow" data-color="#f9ca24" data-pic="url(3.png)"></span>
-                <span class="rose" data-color="#ff7979" data-pic="url(4.png)"></span>
-                </div>
-                <div class="product-info">
-                <div class="product-price">$90</div>
-                <a href="#" class="product-button">Add to Cart</a>
-                </div>
-            </div>
-            <div class="product-card">
-                <h1>Best Shoes</h1>
-                <p>Lorem ipsum, or lipsum as it is sometimes known</p>
-                <div class="product-pic"></div>
-                <div class="product-colors">
-                <span class="blue active" data-color="#7ed6df" data-pic="url(1.png)"></span>
-                <span class="green" data-color="#badc58" data-pic="url(2.png)"></span>
-                <span class="yellow" data-color="#f9ca24" data-pic="url(3.png)"></span>
-                <span class="rose" data-color="#ff7979" data-pic="url(4.png)"></span>
-                </div>
-                <div class="product-info">
-                <div class="product-price">$90</div>
-                <a href="#" class="product-button">Add to Cart</a>
-                </div>
-            </div>
-            <div class="product-card">
-                <h1>Best Shoes</h1>
-                <p>Lorem ipsum, or lipsum as it is sometimes known</p>
-                <div class="product-pic"></div>
-                <div class="product-colors">
-                <span class="blue active" data-color="#7ed6df" data-pic="url(1.png)"></span>
-                <span class="green" data-color="#badc58" data-pic="url(2.png)"></span>
-                <span class="yellow" data-color="#f9ca24" data-pic="url(3.png)"></span>
-                <span class="rose" data-color="#ff7979" data-pic="url(4.png)"></span>
-                </div>
-                <div class="product-info">
-                <div class="product-price">$90</div>
-                <a href="#" class="product-button">Add to Cart</a>
-                </div>
-            </div>
-          </div>
-        -->
-
         <br><br>
         <div class="center-title">
           <h1>Product Gallery</h1>
@@ -127,12 +77,13 @@
         </div>
 
         <!-- x// to close fullscreen view-->
-        <div id="FullImageView">
+        <div id="FullImageView" style="display:none">
           <img id="FullImage"/>
           <span id="CloseButton" onclick="CloseFullView()">&times;</span>
         </div>
 
-        <!-- embedded javascript to run gallery code-->
+
+        <!-- embedded javascript to run gallery code
         <script type="text/javascript">
           function FullView(ImgLink){
             document.getElementById("FullImage").src = ImgLink;
@@ -142,6 +93,7 @@
             document.getElementById("FullImageView").style.display = "none"
           }
         </script>
+      -->
 
 
 
@@ -153,20 +105,6 @@
             </div>
           </div>
         
-       <!-- script for shopping cart items
-          <script>
-            $(".product-colors span").click(function(){
-              $(".product-colors span").removeClass("active");
-              $(this).addClass("active");
-              $("body").css("background",$(this).attr("data-color"));
-              $(".product-price").css("color",$(this).attr("data-color"));
-              $(".product-button").css("color",$(this).attr("data-color"));
-              $(".product-pic").css("background-image",$(this).attr("data-pic"));
-            });
-          </script>
-        -->
-
-
 
 
 
