@@ -1,4 +1,1 @@
-- fix dark mode
-- add footer on every site (copy header element)
-- add technology page
-- fix broken gallery (transfer js code from gallery html file to main js app file)
+Final Site for CS-Course
