@@ -1,3 +1,5 @@
+/*
+
 // Elements that will change properties
 var toggle_btn;
 var big_wrapper;
@@ -55,7 +57,7 @@ function events() {
 
 events();
 
-
+*/
 
 
 
