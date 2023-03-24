@@ -25,9 +25,11 @@ function toggleAnimation() {
   if (dark) {
     clone.classList.remove("light");
     clone.classList.add("dark");
+    localStorage.setItem('dark', true);
   } else {
     clone.classList.remove("dark");
     clone.classList.add("light");
+    localStorage.removeItem('dark');
   }
   clone.classList.add("copy");
   main.appendChild(clone);
@@ -56,6 +58,22 @@ function events() {
 events();
 
 
+/* dark mode on all pages */
+
+function checkdark(){
+  let testing = localStorage.getItem('dark');
+  if(testing){
+    let clone = big_wrapper.cloneNode(true);
+    clone.classList.add("dark");
+    clone.classList.add("copy");
+    main.appendChild(clone);
+    events();
+  }
+}
+
+function delstor(){
+  localStorage.removeItem('dark');
+}
 
 
 

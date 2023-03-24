@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css"/>
 
   </head>
-  <body>
+  <body onload="checkdark()">
     <main>
       <div class="big-wrapper light">
         <img src="./img/shape.png" alt="" class="shape" />
@@ -54,26 +54,42 @@
               </div>
   
               <div class="right">
-                <form method="post" name="contact_form" action="contact.php">
+                <form>
 
                     <label for="fname">Full Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
                 
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    <input type="text" id="email" name="email" placeholder="Your email.." required>
                 
                     <label for="country">Country</label>
-                    <select id="country" name="country">
+                    <select id="country" name="country" required>
                       <option value="canada">Canada</option>
                       <option value="usa">USA</option>
                     </select>
                 
                     <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write Inquiry.." style="height:200px"></textarea>
+                    <textarea id="subject" name="subject" placeholder="Write Inquiry.." style="height:200px" required></textarea>
                     
-                    <!-- <input type="submit" class="btn" value="Submit"> -->
+                    <div class="rating">
+                      <div class="star-icon">
+                        <p>Leave us a rating!</p>
+                        <input type="radio" name="rating1" id="rating1">
+                        <label for="rating1">&starf;</label>
+                        <input type="radio" name="rating2" id="rating2">
+                        <label for="rating2">&starf;</label>
+                        <input type="radio" name="rating3" id="rating3">
+                        <label for="rating3">&starf;</label>
+                        <input type="radio" name="rating4" id="rating4">
+                        <label for="rating4">&starf;</label>
+                        <input type="radio" name="rating5" id="rating5">
+                        <label for="rating5">&starf;</label>
+                        <br>
+                        <a class="submit-btn" href="/submit.html">Submit</a>
+                      </div>
+                    </div>
 
-                    <a class="btn" href="/submit.html">Submit</a>
+                    
                   </form>
               </div>
             </div>
