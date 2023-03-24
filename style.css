@@ -76,7 +76,7 @@ header {
 
 header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -877,7 +877,7 @@ details > summary::-webkit-details-marker {
   margin: auto;
   padding: 100px 300px;
   z-index: 10;
-  transform: translate(-18.5%, 25px);
+  /* transform: translate(-5.5%, 25px); */
   
 }
 
@@ -890,8 +890,7 @@ details > summary::-webkit-details-marker {
 }
 
 .sitemap-showcase-area {
-  padding: 200px 300px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .sitemap-showcase-area .sitemap-container {
