@@ -54,13 +54,13 @@
               </div>
   
               <div class="right">
-                <form>
+                <form method="post" name="contact_form" action="contact.php">
 
-                    <label for="fname">First Name</label>
+                    <label for="fname">Full Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
                 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
                 
                     <label for="country">Country</label>
                     <select id="country" name="country">
@@ -71,7 +71,9 @@
                     <label for="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Write Inquiry.." style="height:200px"></textarea>
                     
-                    <a class="btn" href="/submit.html">Submit</a> 
+                    <input type="submit" class="btn" value="Submit">
+
+                    <!-- <a class="btn" href="/submit.html">Submit</a> -->
                   </form>
               </div>
             </div>
@@ -99,6 +101,9 @@
 
   <!-- loading javascript file (for animated properties) -->
   <script src="/app.js"></script>
+
+  <!-- loading javascript function to send emails (online host)-->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
   <!-- loading the favicons used (ex. moon icon)-->
   <script src="https://kit.fontawesome.com/a81368914c.js"></script>
