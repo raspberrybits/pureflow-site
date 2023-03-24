@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // Elements that will change properties
 var toggle_btn;
 var big_wrapper;
@@ -11,7 +9,7 @@ function declare() {
   hamburger_menu = document.querySelector(".hamburger-menu");
 }
 
-// Page selection
+// Element selection
 const main = document.querySelector("main");
 
 
@@ -46,7 +44,7 @@ function toggleAnimation() {
   });
 }
 
-// Listen for interaction with button
+// Listen for interaction with buttons
 function events() {
   toggle_btn.addEventListener("click", toggleAnimation);
   hamburger_menu.addEventListener("click", () => {
@@ -54,13 +52,13 @@ function events() {
   });
 }
 
+
 events();
 
 
 
 
 
->>>>>>> parent of 8a0abed (Maintenance)
 /* gallery- fullscreen */
 
 function FullView(ImgLink){
@@ -69,9 +67,4 @@ function FullView(ImgLink){
 }
 function CloseFullView() {
   document.getElementById("FullImageView").style.display = "none"
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> parent of 8a0abed (Maintenance)

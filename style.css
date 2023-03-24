@@ -301,7 +301,15 @@ header .container {
 
 @media screen and (max-width: 870px) {
   .hamburger-menu {
-    display: none;
+    display: flex;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .header .container {
+    justify-content: space-between;
   }
 
   .links {
